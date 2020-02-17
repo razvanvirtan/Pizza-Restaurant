@@ -143,7 +143,7 @@ namespace Task_MSP_Razvan2
             {
                 case "Capriciosa":
                     return new Capriciosa();
-                case "Quatro_Staggioni":
+                case "Quatro Staggioni":
                     return new Quatro_Staggioni();
                 case "Hawai":
                     return new Hawai();
@@ -155,11 +155,13 @@ namespace Task_MSP_Razvan2
         }
     }
 
+    //interfata pentru crearea strategiilor de oferte
     public abstract class Oferta
     {
         public abstract string Anunt { get; }
     }
 
+    //ofertele concrete
     public class oferta_luni : Oferta
     {
         public string anunt = "1 pizza + 1 gratis";
@@ -193,6 +195,8 @@ namespace Task_MSP_Razvan2
         }
     }
 
+    /* clasa care va selecta o anumita oferta, in functie de
+    ziua saptamanii */
     public class Oferta_Azi
     {
         private DayOfWeek ziua = DateTime.Today.DayOfWeek;
@@ -220,6 +224,7 @@ namespace Task_MSP_Razvan2
             } 
         }
 }
+
     static class Program
     {
         /// <summary>

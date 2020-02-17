@@ -17,8 +17,8 @@ namespace Task_MSP_Razvan2
             InitializeComponent();
             listBox1.SetSelected(0, true);
 
+            //implementarea ofertelor in interfata vizuala
             Oferta_Azi oferta_azi;
-
             oferta_azi = new Oferta_Azi();
             textBox2.Text = "OFERTA ZILEI    " + oferta_azi.oferta.Anunt;
         }
@@ -31,8 +31,8 @@ namespace Task_MSP_Razvan2
                 case "Capriciosa":
                     pizza = Magazin.GetInstance.Preparare("Capriciosa");
                     break;
-                case "Quatro staggioni":
-                    pizza = Magazin.GetInstance.Preparare("Quatro staggioni");
+                case "Quatro Staggioni":
+                    pizza = Magazin.GetInstance.Preparare("Quatro Staggioni");
                     break;
                 case "Hawai":
                     pizza = Magazin.GetInstance.Preparare("Hawai");

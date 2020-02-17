@@ -64,7 +64,7 @@
             this.comanda.Name = "comanda";
             this.comanda.Size = new System.Drawing.Size(94, 35);
             this.comanda.TabIndex = 5;
-            this.comanda.Text = "button1";
+            this.comanda.Text = "Prepara";
             this.comanda.UseVisualStyleBackColor = true;
             this.comanda.Click += new System.EventHandler(this.comanda_Click);
             // 
